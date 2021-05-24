@@ -11,6 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\errorAndEmpty.json" />
+    <None Remove="Data\navigation.json" />
+    <None Remove="Data\transaction.json" />
+    <None Remove="Images\NoItem.svg" />
+    <None Remove="Images\PaymentSuccess.svg" />
     <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Medium.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
@@ -19,6 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Data\errorAndEmpty.json" />
+    <EmbeddedResource Include="Data\navigation.json" />
+    <EmbeddedResource Include="Data\transaction.json" />
+    <EmbeddedResource Include="Images\NoItem.svg" />
+    <EmbeddedResource Include="Images\PaymentSuccess.svg" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Bold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Medium.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
@@ -27,8 +37,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.1.0.63" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="19.1.0.63" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.1.0.63" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="19.1.0.63" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="19.1.0.63" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.1.0.63" />
     <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="19.1.0.63" />
@@ -37,6 +52,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ChooseALocker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Sign_Up_Main_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -100,10 +118,16 @@
     <EmbeddedResource Update="Themes\LightTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SimpleEmailEntry.xaml">
+    <EmbeddedResource Update="Views\Locker1OrderedSuccess.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SimpleLoginCheck.xaml">
+    <EmbeddedResource Update="Views\Locker2OrderFailed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Locker3OrderSuccess.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SimpleEmailEntry.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SimpleLoginPage.xaml">
@@ -115,5 +139,10 @@
     <EmbeddedResource Update="Views\SimpleSignUpPage_Admin.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataService\" />
+    <Folder Include="Views\Templates\" />
   </ItemGroup>
 </Project>

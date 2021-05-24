@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="essentialUIKitTry.ChooseALocker">
+    <StackLayout >
+        <Label Text="Lockers" HorizontalOptions="Center" FontSize="40" FontFamily="Arial" />
+        <Label Text=" "/>
+        <Label Text="Please Choose Your Locker:" FontSize="25" FontFamily="Arial"  />
+        <Label Text=" "/>
+
+        <Button Text="Locker 1" WidthRequest="250" BackgroundColor="green" TextColor="white"
+            HorizontalOptions="Center" Clicked="Locker1_Clicked" ></Button>
+        <Label Text=" "/>
+        <Button Text="Locker 2" WidthRequest="250" BackgroundColor="Red" TextColor="white"
+            HorizontalOptions="Center" Clicked="Locker2_Clicked" ></Button>
+        <Label Text=" "/>
+        <Button Text="Locker 3" WidthRequest="250" BackgroundColor="green" TextColor="white"
+            HorizontalOptions="Center" Clicked="Locker3_Clicked"></Button>
+        <Label Text=" "/>
+
+
+
+
+    </StackLayout>
+</ContentPage>

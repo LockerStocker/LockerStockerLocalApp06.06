@@ -1,5 +1,6 @@
 ﻿using essentialUIKitTry.Validators;
 using essentialUIKitTry.Validators.Rules;
+using essentialUIKitTry.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -120,7 +121,7 @@ namespace essentialUIKitTry.ViewModels
         {
             if (this.AreFieldsValid())
             {
-                // Do Something
+                Application.Current.MainPage = new NavigationPage(new ChooseALocker());
             }
         }
 
