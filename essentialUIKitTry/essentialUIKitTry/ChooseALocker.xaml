@@ -11,7 +11,7 @@
         <Button Text="Locker 1" WidthRequest="250" BackgroundColor="green" TextColor="white"
             HorizontalOptions="Center" Clicked="Locker1_Clicked" ></Button>
         <Label Text=" "/>
-        <Button Text="Locker 2" WidthRequest="250" BackgroundColor="Red" TextColor="white"
+        <Button Text="Locker 2" WidthRequest="250" BackgroundColor="red" TextColor="white"
             HorizontalOptions="Center" Clicked="Locker2_Clicked" ></Button>
         <Label Text=" "/>
         <Button Text="Locker 3" WidthRequest="250" BackgroundColor="green" TextColor="white"

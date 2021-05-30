@@ -16,10 +16,12 @@ namespace essentialUIKitTry
         public ChooseALocker()
         {
             InitializeComponent();
+
         }
         void Locker1_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new Locker1OrderedSuccess());
+            
         }
         void Locker2_Clicked(object sender, System.EventArgs e)
         {
