@@ -22,7 +22,7 @@ namespace essentialUIKitTry.Views
         }
         void OrderProfileClicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new LockerProfilePage());
+            Navigation.PushAsync(new LockerprofilePage());
         }
     }
 }

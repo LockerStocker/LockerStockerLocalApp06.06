@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="essentialUIKitTry.Views.LockerProfilePage"
+    x:Class="essentialUIKitTry.Views.LockerprofilePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:controls="clr-namespace:essentialUIKitTry.Controls"
-    xmlns:viewModel="clr-namespace:essentialUIKitTry.ViewModels"
+    xmlns:viewModel="clr-namespace:essentialUIKitTry.ViewModels" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     x:Name="profilePage"
     Title="Profile Page"
     BackgroundColor="{DynamicResource Gray-Bg}"
@@ -13,7 +13,7 @@
 
     <!--  Binding context for Profile Page  -->
     <ContentPage.BindingContext>
-        <viewModel:LockerProfilePageViewModel />
+        <viewModel:LockerprofilePageViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.ControlTemplate>
@@ -96,11 +96,10 @@
                         Text="Last photo of the locker"
                         VerticalOptions="Center" />
 
-                    <Label
-                        Grid.Column="2"
-                        HorizontalOptions="End"
-                        Style="{StaticResource IconLabelStyle}"
-                        Text="{StaticResource Next}" />
+                    <d:Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Tap_try" NumberOfTapsRequired="1"/>
+                    </d:Grid.GestureRecognizers>
+
 
 
                 </Grid>
@@ -108,25 +107,7 @@
                 <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
 
                 <!--  Grid for mail id label and icon  -->
-                <Grid
-                    Padding="16"
-                    ColumnDefinitions="Auto, *"
-                    ColumnSpacing="16">
 
-                    <Label
-                        Grid.Column="0"
-                        Style="{StaticResource IconLabelStyle}"
-                        Text="{StaticResource Account}" />
-
-                    <Label
-                        Grid.Column="1"
-                        FontFamily="Montserrat-Medium"
-                        HorizontalOptions="Start"
-                        Style="{StaticResource TitleLabelStyle}"
-                        Text="Status: Locked/Unlocked"
-                        VerticalOptions="Center" />
-
-                </Grid>
 
                 <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
 
@@ -153,6 +134,10 @@
 
                 <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
 
+
+
+
+
                 <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
 
                 <!--  Grid for help label and icon  -->
@@ -161,7 +146,22 @@
                     ColumnDefinitions="Auto, *"
                     ColumnSpacing="16">
 
+                    <Label
+                        Grid.Column="0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Help}" />
+
+                    <Label
+                        Grid.Column="1"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Is it locked?:    True"
+                        VerticalOptions="Center" />
+
                 </Grid>
+
+                <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
 
             </StackLayout>
 

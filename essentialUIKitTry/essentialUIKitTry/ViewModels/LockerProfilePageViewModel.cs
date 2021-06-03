@@ -8,14 +8,14 @@ namespace essentialUIKitTry.ViewModels
     /// ViewModel for profile page
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class LockerProfilePageViewModel : BaseViewModel
+    public class LockerprofilePageViewModel : BaseViewModel
     {
         #region Constructor
 
         /// <summary>
         /// Initializes a new instance for the <see cref="ProfileViewModel" /> class
         /// </summary>
-        public LockerProfilePageViewModel()
+        public LockerprofilePageViewModel()
         {
             this.EditCommand = new Command(this.EditButtonClicked);
             this.AvailableCommand = new Command(this.AvailableStatusClicked);

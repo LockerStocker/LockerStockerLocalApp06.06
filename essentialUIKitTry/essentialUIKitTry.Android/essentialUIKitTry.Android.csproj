@@ -125,7 +125,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\insideALocker.jpeg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\essentialUIKitTry\essentialUIKitTry.csproj">
       <Project>{F5F013C5-E2DA-41B5-B1C0-2D2CF5DD112B}</Project>

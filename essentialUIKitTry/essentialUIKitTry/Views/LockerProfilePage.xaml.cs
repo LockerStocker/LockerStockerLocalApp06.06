@@ -8,15 +8,19 @@ namespace essentialUIKitTry.Views
     /// </summary>
     [Preserve(AllMembers = true)]
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LockerProfilePage
+    public partial class LockerprofilePage
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LockerProfilePage" /> class.
+        /// Initializes a new instance of the <see cref="LockerprofilePage" /> class.
         /// </summary>
-        public LockerProfilePage()
+        public LockerprofilePage()
         {
             this.InitializeComponent();
-            
+
+        }
+        void Tap_try(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new InsideALockerImage());
         }
     }
 }
