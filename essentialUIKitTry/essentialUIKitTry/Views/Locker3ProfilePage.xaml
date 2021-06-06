@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="essentialUIKitTry.Views.LockerprofilePage"
+    x:Class="essentialUIKitTry.Views.Locker3ProfilePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
@@ -13,8 +13,9 @@
 
     <!--  Binding context for Profile Page  -->
     <ContentPage.BindingContext>
-        <viewModel:LockerprofilePageViewModel />
+        <viewModel:Locker3ProfilePageViewModel />
     </ContentPage.BindingContext>
+
 
     <ContentPage.ControlTemplate>
         <ControlTemplate>
@@ -68,7 +69,7 @@
                     Margin="0,10,0,10"
                     FontFamily="Montserrat-Bold"
                     Style="{StaticResource TitleLabelStyle}"
-                    Text="Locker ID: 1"
+                    Text="Locker ID: 3"
                     VerticalOptions="Center" />
 
                 <!--  Grid for available label and navigation icon  -->
@@ -127,7 +128,7 @@
                         FontFamily="Montserrat-Medium"
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
-                        Text="00:58:57.123"
+                        Text="00:59:58.856"
                         VerticalOptions="Center" />
 
                 </Grid>
